@@ -101,8 +101,8 @@ a:hover {
 .product-image {
   padding: 1rem;
   align-self: center;
-  max-width: 20rem;
-  max-height: 30rem;
+  width: 20rem;
+  height: 30rem;
 }
 
 .product-name {
