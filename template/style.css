@@ -9,14 +9,6 @@ body {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: #ff8000;
-}
-
 .grid-container {
     height: 100%;
     display: grid;
@@ -44,6 +36,10 @@ a:hover {
     font-weight: bold;
 }
 
+.brand a:hover {
+    color: #fff;
+}
+
 .header-links a {
     color: #fff;
 }
@@ -61,16 +57,23 @@ a:hover {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff8000;
+}
+
 /* Home Screen */
 .products {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 .products li {
-    flex: 0 1 34rem;
+    flex: 0 1 26rem;
     margin: 1rem;
     height: 50rem;
     border-bottom: .1rem #c0c0c0 solid;
@@ -83,6 +86,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    align-items: center;
 }
 
 .product-image {
@@ -107,4 +111,40 @@ a:hover {
 
 .product-rating {
     margin-bottom: 1rem;
+}
+
+/* Sidebar */
+
+.brand button {
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: #f0f0f0;
+    height: 100%;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-close-button {
+    background-color: #f0f0f0;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: .5rem;
+    top: 1.5rem;
 }
